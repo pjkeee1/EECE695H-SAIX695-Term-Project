@@ -15,7 +15,7 @@ from src.test_dataset import CUB as Test_Dataset
 from src.test_sampler import Test_Sampler
 
 " User input value "
-TOTAL = 200000  # total step of training
+TOTAL = 60000  # total step of training
 PRINT_FREQ = 100  # frequency of print loss and accuracy at training step
 VAL_FREQ = 1000  # frequency of model eval on validation dataset
 SAVE_FREQ = 1000  # frequency of saving model€
@@ -276,7 +276,7 @@ if __name__ == '__main__':
     parser.add_argument('--name', default='model', help="name your experiment")
     parser.add_argument('--dpath', '--d', default='./dataset/CUB_200_2011/CUB_200_2011', type=str,
                         help='the path where dataset is located')
-    parser.add_argument('--restore_ckpt', default='./checkpoints/30000_model.pth', type=str, help="restore checkpoint")
+    parser.add_argument('--restore_ckpt', default='./checkpoints/50000_model.pth', type=str, help="restore checkpoint")
     # parser.add_argument('--restore_ckpt', type=str, help="restore checkpoint")
     parser.add_argument('--nway', '--n', default=5, type=int, help='number of class in the support set (5 or 20)')
     parser.add_argument('--kshot', '--k', default=5, type=int,

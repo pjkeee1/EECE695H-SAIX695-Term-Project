@@ -33,9 +33,9 @@ class FewShotModel(nn.Module):
     #     )
     def __init__(self):
         super(FewShotModel, self).__init__()
-        self.features = models.resnet50() # 마지막 train accuracy : 50%, validation accuracy : 34 %
-        # self.features = models.alexnet() # 안됨
-        # self.features = models.vgg16() # 안됨
+        self.features = models.resnet50() 
+        # self.features = models.alexnet() 
+        # self.features = models.vgg16()
         
         
         
